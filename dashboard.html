@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tambah Admin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">satu data pangkep</div>
+        <ul class="menu">
+            <li class="active">Dashboard</li>
+            <li>Tambah Admin</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1></h1>
+        <div class="container">
+            <h1>Upload File</h1>
+            <input type="file" id="fileInput" />
+            <button onclick="uploadFile()">Upload File</button>
+            <div id="output"></div>
+        </div>
+        <!-- Your content for "Tambah Admin" goes here -->
+    </div>
+
+    <script src="dasshboard.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            height: 100%;
+            position: fixed;
+        }
+        
+        .logo {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        .menu li:hover {
+            background-color: #444;
+        }
+        
+        .menu .active {
+            background-color: #555;
+        }
+        
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        /* For responsiveness */
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+        }
+        
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</body>
+
+</html>
